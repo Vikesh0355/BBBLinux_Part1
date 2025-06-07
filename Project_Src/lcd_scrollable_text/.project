@@ -48,7 +48,7 @@
 	<variableList>
 		<variable>
 			<name>copy_PARENT</name>
-			<value>file:/E:/fastBit/courses/embedded_linux/EmbeddedLinuxBBB/Project_Src</value>
+			<value>file:/D:/Professional/BBBLinux_Part1/Project_Src</value>
 		</variable>
 	</variableList>
 </projectDescription>

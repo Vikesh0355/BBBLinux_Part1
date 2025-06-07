@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1323611861/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1323611861/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1323611861/PATH/value=C\:\\Tools\\gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf\\gcc-linaro-7.5.0-2019.12-i686-mingw32_arm-linux-gnueabihf\\bin
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1323611861/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.debug.1323611861/appendContributed=true

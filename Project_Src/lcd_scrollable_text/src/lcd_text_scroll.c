@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
     the display and never reading from it.*/
     gpio_write_value(GPIO_67_P8_8_RW_5,LOW_VALUE);
    
-   /*• The EN pin is used to tell the LCD when data is ready*/ 
+   /*ï¿½ The EN pin is used to tell the LCD when data is ready*/ 
     gpio_write_value(GPIO_69_P8_9_EN_6,LOW_VALUE);
    
    /*Data pins 4~7 are used for actually transmitting data, and data pins 0~3 are left unconnected*/
@@ -183,7 +183,7 @@ int main(int argc, char *argv[])
     lcd_send_command(cmd);
 
 
-    lcd_send_command(LCD_CMD_CLEAR_DISPLAY yo);
+    lcd_send_command(LCD_CMD_CLEAR_DISPLAY);
     //lets start printing from extreme right end of first row of the lcd. .
     lcd_set_cursor( 1,17);
 
