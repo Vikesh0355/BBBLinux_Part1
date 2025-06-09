@@ -1,12 +1,13 @@
 
 *************************cross tool-chain installation and settings for linux host******************
-
+follow section 11 lecture 60
 STEP 1 : Download arm cross toolchain for your Host machine
+https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/
 
 STEP 2 :  export  path of the cross compilation toolchain. 
 
 export PATH=$PATH:/home/kiran/BBB_Workspace/Downloads/gcc-linaro-6.3.1-2017.02-x86_64_arm-linux-gnueabihf/bin
-
+export PATH=$PATH:/home/vikeshmishra/Downloads/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin
 
 *************************U-boot Compilation ***************************************************
 
@@ -14,10 +15,13 @@ export PATH=$PATH:/home/kiran/BBB_Workspace/Downloads/gcc-linaro-6.3.1-2017.02-x
 STEP 1: distclean : deletes all the previously compiled/generated object files. 
 
 make CROSS_COMPILE=arm-linux-gnueabihf- distclean
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- distclean  #vikesh
 
 STEP 2 : apply board default configuration for uboot
 
 make CROSS_COMPILE=arm-linux-gnueabihf- am335x_boneblack_defconfig
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bb.org_defconfig #vikesh
+
 
 
 STEP 3 : run menuconfig, if you want to do any settings other than default configuration . 
@@ -47,9 +51,11 @@ STEP 4:
 
 STEP 5:
  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 modules
+ make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- modules -j4  #vikesh
 
 STEP 6:
  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=<path of the RFS> modules_install
+#seems it will be useful in section 13 OR section 14 and we need to install the compiled file of stesp4 and step5 for BBB device. But not sure
 
 
 ************************* Busy box compilation ***************************************************
