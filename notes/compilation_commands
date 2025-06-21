@@ -56,7 +56,7 @@ STEP 5:
 STEP 6:
  make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=<path of the RFS> modules_install
 #seems it will be useful in section 13 OR section 14 and we need to install the compiled file of stesp4 and step5 for BBB device. But not sure
-make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=/home/vikeshmishra/BBB_Workspace/RFS_Static modules_install
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=/home/vikesh/BBB_Workspace/RFS_Static modules_install
 
 
 ************************* Busy box compilation ***************************************************
